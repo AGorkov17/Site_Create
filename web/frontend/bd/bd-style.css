@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table-box {
+    margin: 50px auto;
+}
+.table-row {
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family:sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 0 2px 6px 0 rgba(217,229,255,0.7);
+}
+.table-cell {
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.table-head {
+    background: #8665f7;
+    box-shadow: none;
+    color: white;
+    font-weight: 600;
+}
+.table-head .table-cell {
+    border-right: none;
+}
+.ed-ed {
+    border-right: none;
+}
+
