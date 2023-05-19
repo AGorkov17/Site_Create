@@ -1,17 +1,19 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Дайте выпить!{% endblock %}
+{% block title %}Хочу играть{% endblock %}
 
 
 {% block content %}
     <div class="text-white">
         <div style="text-align: center;">
-            <h1>Дайте выпить!</h1>
+            <h1>Хочу играть</h1>
             <form method="post">
                 {% csrf_token %}
                 {{ form.name }}<br>
+                {{ form.vol }}<br>
+                {{ form.non }}<br>
                 <span>{{ error }}</span>
-                <input type="Submit" name="submit" value="Submit"/>
+                <button class="btn btn-primary" type="submit">Хочу выпить</button>
             </form>
         </div>
     </div>

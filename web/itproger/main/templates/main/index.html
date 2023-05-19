@@ -1,9 +1,37 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
-
-
+{% block title %}Топ{% endblock %}
 {% block content %}
-    <h1>Главная страница</h1>
-    <p>Главная страница</p>
+<!--    <div class="features">-->
+<!--        <div class="alert-warning">-->
+    <div class="rat">Рейтинг весельчаков</div>
+
+    <div class="table-row table-head">
+        <div class="table-cell">
+            <p>Кто</p>
+        </div>
+        <div class="table-cell">
+            <p>Столько опрокинул в мл</p>
+        </div>
+        <div class="table-cell">
+            <p>Стольким размешал в мл</p>
+        </div>
+    </div>
+<!-- </div>-->
+    {% for el in data %}
+    <div class="table-row">
+        <div class="table-cell">
+            <p>{{ el.name }}</p>
+        </div>
+        <div class="table-cell">
+            <p>{{ el.vol }}</p>
+        </div>
+        <div class="table-cell ed-ed">
+            <p>{{ el.non }}</p>
+        </div>
+
+    </div>
+    {% endfor %}
+<!--</div>-->
+
 {% endblock %}

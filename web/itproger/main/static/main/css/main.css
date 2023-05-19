@@ -1,10 +1,10 @@
 body {
-    background: #2c2c2c;
+    background: #003844;
 }
 
 aside {
     float: left;
-    background: #8a2be2;
+    background: #FFBF60;
     width: 30%;
     padding: 2.5%;
     height: 100vh;
@@ -13,20 +13,22 @@ aside {
 }
 
 aside img {
-    width: 120px;
+    margin-top:25px;
+    width: 100px;
     float: left;
 }
 
 aside .logo {
     font-size: 60px;
-    margin-left: 0px;
+
+    margin-left:5px;
     font-weight: bold;
-    color: #ffa500;
+    color: #ebf2fa;
 }
 
 aside ul {list-style: none}
 aside ul li {
-    color: #ffa500;
+    color: #ebf2fa;
     display: block;
     margin-top: 30px;
     font-size: 30px;
@@ -34,14 +36,176 @@ aside ul li {
 }
 
 aside ul li:hover, aside ul a:hover {
-    color: #eb5959;
+    color: #ebf2fa;
     text-decoration: none;
     transform scale(1.05);
 }
 
 aside ul1 li {
     display: block;
-    color: #ffa500;
+    color: #EBF2FA;
     margin-top: 450px;
     font-size: 40px;
+}
+.drink  {
+    text-aling: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;
+    padding-top:55px;
+
+}
+
+
+.alert-warning{
+    float: center;
+    text-size: 50px;
+    clear: both;
+    width: 300px;
+    height: 100px;
+    margin: 55px 48%;
+    text-align: center;
+    color: #fff;
+
+}
+.rat {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding-top:50px;
+}
+form {
+    margin-left:51%;
+    width: 500px;
+    margin-top: 50px;
+}
+/*.features {
+    color: #fff;
+    text-align: center;
+    text-size: 50px;
+    text-weight: bold;
+    vertical-aling: 60px;
+}*/
+
+
+.table-box {
+    margin: 50px auto;
+}
+.table-row {
+    display: table;
+    width: 70%;
+    margin: 10px auto;
+    font-family:sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 6px 0 rgba(217,229,255,0.7);
+}
+.table-cell {
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.table-head {
+    background: #d7263d;
+    box-shadow: none;
+    color: white;
+    font-weight: 600;
+}
+.table-head .table-cell {
+    border-right: none;
+}
+.ed-ed {
+    border-right: none;
+}
+
+/*форма авторизации*/
+.form-title {
+    text-align: center;
+    color: #305070;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+
+}
+.circle {
+
+    padding-top: 116px;
+    padding-left: 135px;
+    width: 555px;
+    height: 555px;
+    border-radius: 50%;
+    background: #F7FAFF;
+    box-shadow: 0px 4px 70px 6px rgba(217,229,255,0.7);
+    margin-left: 50%;
+
+
+}
+
+.register-form-container {
+    width: 70%;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(217,229,255,0.7);
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+
+}
+
+.form-field {
+    margin-bottom: 20px;
+
+}
+.form-fields {
+    line-height:30px;
+}
+
+input {
+    height: 45px;
+    width: 110%;
+    color: #3B5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+    padding-left: 25px;
+
+}
+input:focus {
+    outline: none;
+    border: 2px solid #C1D9FD;
+}
+.button {
+
+    height: 30px;
+    width: 110%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #247FFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+/*.button:hover {
+    background-color: #0D6CF2;
+}*/
+/*a.button {
+    text-decoration: none;
+}*/
+
+.container {
+    background: url({%static "12.png"%}) no-repeat;
+    background-size: cover;
+    height: 2924px;
 }

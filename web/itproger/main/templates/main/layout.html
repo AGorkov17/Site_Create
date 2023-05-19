@@ -12,16 +12,13 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/logo.jpg' %}" alt="Лого">
+        <img src="{% static 'main/img/logo.svg' %}" alt="Лого">
         <span class="logo">Эндорфин</span>
         <ul>
-            <a href="{% url 'reg' %}"><li>Хочу играть</li></a>
             <a href="{% url 'auto' %}"><li>Дайте выпить!</li></a>
             <a href="{% url 'top' %}"><li>Топ</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-primary">Хочу играть</button></li></a>
         </ul>
-        <ul1>
-            <a href="{% url 'about' %}"><li>Про проект</li></a>
-        </ul1>
     </aside>
     <main>
         {% block content %}
